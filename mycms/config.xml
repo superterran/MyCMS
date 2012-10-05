@@ -1,0 +1,15 @@
+<config>
+    <themename>default</themename>
+    <database>
+        <host>localhost</host>
+        <user>root</user>
+        <pass />
+        <database>mycms</database>
+        <prefix>mycms_</prefix>
+    </database>
+
+    <paths>
+        <modules>test</modules>
+    </paths>
+
+</config>
