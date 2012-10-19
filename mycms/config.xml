@@ -1,4 +1,13 @@
 <config>
+
+    <site>
+        <title>MyCMS</title>
+        <description>Edit me in the config.xml file</description>
+        <footer>Copyright 2012 Buisness Enterprises</footer>
+        <debug>true</debug>
+
+    </site>
+
     <themename>default</themename>
     <database>
         <host>localhost</host>
@@ -8,8 +17,5 @@
         <prefix>mycms_</prefix>
     </database>
 
-    <paths>
-        <modules>test</modules>
-    </paths>
 
 </config>

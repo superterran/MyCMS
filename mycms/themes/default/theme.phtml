@@ -1,0 +1,29 @@
+<!doctype>
+<html>
+    <head>
+
+        <title><?php echo $this->get('site/title') . $this->getHook('title', ' - '); ?>
+        </title>
+        <link rel = "stylesheet" href = "<?php echo $this->get('theme/url'); ?>css/style.css">
+
+    </head>
+    <body>
+
+        <div id = "container">
+
+            <div id = "header">
+
+                <img src = "<?php echo $this->get('theme/url'); ?>img/icon.png" id = "icon">
+
+                <h1><?php echo $this->get('site/title'); ?></h1>
+                <h2><?php echo $this->get('site/description'); ?></h2>
+            </div>
+
+            <div id = "content"><?php echo $this->getHook('content'); ?></div>
+
+            <div id = "footer"><?php echo $this->get('site/footer'); ?></div>
+
+        </div>
+
+    </body>
+</html>
