@@ -9,12 +9,17 @@
     </site>
 
     <themename>default</themename>
+
+
+
     <database>
-        <host>localhost</host>
-        <user>root</user>
-        <pass />
-        <database>mycms</database>
-        <prefix>mycms_</prefix>
+        <mysql>
+            <host>localhost</host>
+            <user>root</user>
+            <pass>10843pat</pass>
+            <database>mycms</database>
+            <prefix>mycms_</prefix>
+        </mysql>
     </database>
 
 
