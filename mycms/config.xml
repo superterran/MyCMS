@@ -16,7 +16,7 @@
         <mysql>
             <host>localhost</host>
             <user>root</user>
-            <pass>10843pat</pass>
+            <pass />
             <database>mycms</database>
             <prefix>mycms_</prefix>
         </mysql>
