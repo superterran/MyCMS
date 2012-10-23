@@ -1,4 +1,17 @@
+<?php
+/**
+ * This is the template for the 404 page. This page is shown when the webapp can't figure out what
+ * to output. You can see this see this in action at...
+ * @see mycms_http::parseUrl()
+ *
+ * @package MyCMS
+ * @author Doug Hatcher superterran@gmail.com
+ * @copyright http://creativecommons.org/licenses/by/3.0/deed.en_US
+ */
+?>
 <h1>Error 404</h1>
 <p>File not found</p>
 
-<pre style = "overflow-x: hidden;"><?php var_dump($_SERVER); ?></pre>
+<?php if($this->get('site/debug') == 'true'): ?>
+    <pre style = "overflow-x: hidden;"><?php var_dump($_SERVER); ?></pre>
+<?php endif; ?>

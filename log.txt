@@ -1,0 +1,2 @@
+
+2012-10-22 20:03:38	config.xml not found, exiting	framework_abstract::loadConfig line: 39

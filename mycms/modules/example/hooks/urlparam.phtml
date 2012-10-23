@@ -1,0 +1,19 @@
+<?php
+/**
+* This is the hook file generated when calling {@link http://mycms.dev/example/urlparam/}
+*
+* @package MyCMS
+* @subpackage Example Module
+* @author Doug Hatcher superterran@gmail.com
+* @copyright http://creativecommons.org/licenses/by/3.0/deed.en_US
+*/
+?>
+<p>This is an example of url parameters being worked out from a hook file. Set the vars to see their value. Use this for
+example... <a href = "<?php echo $this->get('baseurl'); ?>example/urlparam/id/10/author/superterran/twinkle">Example Url</a></p>
+
+Id: <?php echo $this->get('example/urlparam/id'); ?><br>
+Author: <?php echo $this->get('example/urlparam/author'); ?><br>
+
+<p>Additionally, Here are the raw params</p>
+
+<pre><?php var_dump($this->get('example/urlparam')); ?></pre>

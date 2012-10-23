@@ -1,45 +1,40 @@
-<pre>
 <?php
-/* MyCMS
-fdfdf
+/**
+ * MyCMS is a simple framework that allows for the rapid development php based apps.
  *
- *
+ * @package MyCMS
+ * @url https://github.com/superterran/MyCMS
+ * @author Doug Hatcher superterran@gmail.com
+ * @copyright http://creativecommons.org/licenses/by/3.0/deed.en_US
  */
-ini_set('display_errors','On'); 
+
+
+ini_set('display_errors','On');
 error_reporting(E_ALL);
 
-/*
 
-This is a stupid little framework that attempts to do the following:
+/**
+ * This is the framework class, http means it's for rendering browser content, dive in to understand how it works.
+ * @see mycms
+ */
+require_once('mycms/http.php');
 
-	* .htaccess funnels all requests to index.php where we 
-	  instantiate the framework, which could check to see if
-	  a login token is set, determine if this is a browser based request
-	  or something else like an api or a terminal command 
+/**
+ * Instantiate the framework, this will spin it up and get it to the point
+ * where we can start working through the browser request.
+ * @see mycms
+ */
+$mycms = new mycms_http();
 
-	* the framework parses the url query/parameters passed in
-	  and determines what it is the user is trying to accomplish,
-	  fires off whatever is needed to perform the request and 
-	  builds whatever output is required to complete
-
-	* the framework serves up the output in a template, all the 
-	  links/actions to use the served web app are urls that 
-	  use the framework's url parsing, ensuring that everything
-	  is handled through the framework in a common way 
-			
-*/
-
-require_once('mycms/main.php'); // load the main class
-
-$mycms = new mycms();  // instatiate the framework
-
-$mycms->init(); // does most of the work
+/**
+ * At this point the framework is spun up. Now let's work out the request
+ * @see mycms::init();
+ */
+$mycms->init();
 
 
-
-
-
-// at this point, no headers should be sent to the browser...
-
-$mycms->renderOutput(); // render the output
+/**
+ * Everything is done except for generating the HTML to complete.
+ */
+$mycms->renderOutput();
 
