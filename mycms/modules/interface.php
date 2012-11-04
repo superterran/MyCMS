@@ -39,6 +39,7 @@ interface mycms_module {
      * @see mycms::go()
      * @return mixed
      */
-    public function indexAction();
+
+     public function indexAction();
 
 }

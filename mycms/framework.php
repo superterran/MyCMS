@@ -102,7 +102,16 @@ abstract class mycms
                 }
             }
 
-            if(empty($_data)) return false; else return $_data;
+            if(!empty($_data)) {
+
+                /**
+                 * @todo clean up returns
+                 * ex. empty values tend to be returned as empty arrays. See database/password
+                 */
+
+                return $_data;
+
+            }
 
         } catch(Exception $e) {
 
@@ -110,7 +119,10 @@ abstract class mycms
 
         }
 
+        return false;
+
     }
+
 
     /**
      * This sets a configuration option to a given value. These do not persist
